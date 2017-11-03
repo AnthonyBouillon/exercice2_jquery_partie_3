@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="jquery-3.2.1.js"></script>
+    <title>Exercice 2</title>
+  </head>
+  <body>
+    <button id="more"> + </button>
+    <input type="text" id="text" name="text"/>
+    <button id="less"> - </button>
+    <script>
+      var numberClick = 0;
+      $('#more').click(function(){
+        numberClick += +1;
+        $('#text').val(numberClick);
+      })
+      var numberClick = 0;
+      $('#less').click(function(){
+        numberClick += -1;
+        $('#text').val(numberClick);
+      })
+    </script>
+  </body>
+</html>
