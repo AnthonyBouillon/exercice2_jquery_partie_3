@@ -10,16 +10,19 @@
     <input type="text" id="text" name="text"/>
     <button id="less"> - </button>
     <script>
+    $(function(){
       var numberClick = 0;
       $('#more').click(function(){
-        numberClick += +1;
+        numberClick ++;
         $('#text').val(numberClick);
       })
       var numberClick = 0;
       $('#less').click(function(){
-        numberClick += -1;
+        numberClick --;
         $('#text').val(numberClick);
-      })
+      });
+    });
+
     </script>
   </body>
 </html>
